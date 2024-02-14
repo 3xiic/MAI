@@ -1,0 +1,141 @@
+header {
+    font-family: 'Intro Rust', Arial, sans-serif;
+    background-color: #E6A4B4;
+    color: black;
+    padding: 20px;
+    text-align: center; 
+    height: 8vh;
+    font-size: 30px;
+}
+body {
+    background-color: #FFF8E3; 
+    font-family: 'Intro Rust', Arial, sans-serif;
+}
+a {
+    text-decoration: none; /* Quitar el subrayado predeterminado */
+    outline: none; /* Quitar el contorno predeterminado */
+    color: rgb(0, 0, 0); /* Cambiar el color del texto de los enlaces a negro */
+}
+.enlace_especifico{
+    color: #E6A4B4;
+}
+.container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    justify-content: center; /* Alinea horizontalmente los elementos al centro */
+}
+.imagen-izquierda {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px; /* Margen a la derecha para separar la imagen del texto */
+}
+
+.imagen-derecha {
+    width: 80px;
+    height: 80px;
+    margin-left: 0px; /* Margen a la izquierda para separar la imagen del texto */
+}
+
+
+/* Estilos adicionales para el contenido */
+
+.cuadro{
+    
+    width: 400px; /* Ancho del div */
+    height: 200px; /* Alto del div */
+    background: black; /* Cuadrito de fondo */
+     margin-left: 20px;
+}
+.contenedor {
+    background-color:#F3D7CA;
+    overflow: hidden; /* Limpiar el float */
+    height: 30%;
+}
+
+.elemento1 {
+    font-family: 'Intro Rust', Arial, sans-serif;
+    font-size: 30px;
+    width: 50%; /* Distribuir el espacio igualmente entre los elementos */
+    box-sizing: border-box; /* Incluir el relleno y el borde en el ancho especificado */
+    float: left; /* Flotar el primer elemento a la izquierda */
+    /* Eliminar el borde */
+    border: none;
+    /* Alinear el texto al centro */
+    text-align: center;
+}
+
+.elemento1, .elemento2 {
+    height: 30%;
+    width: 50%; /* Distribuir el espacio igualmente entre los elementos */
+    box-sizing: border-box; /* Incluir el relleno y el borde en el ancho especificado */
+    float: left; /* Flotar ambos elementos hacia la izquierda */
+}
+
+.elemento2 {
+    max-width: 20%; /* Establecer el ancho máximo de la imagen al 100% del contenedor */
+    margin-left: 5%;
+    height: auto; /* Permitir que la altura se ajuste automáticamente para mantener la proporción */
+}
+
+.botones-container {
+    width: 80%; /* Ancho deseado para el contenedor de botones */
+    margin: 0 auto; /* Para centrar el contenedor horizontalmente */
+  }
+  
+  .texto {
+    font-family: 'Intro Rust', Arial, sans-serif;
+    display: none;
+    font-size: 30px; /* Tamaño de fuente inicial */
+  }
+  .texto-escrito {
+    font-family: 'Intro Rust', Arial, sans-serif;
+    font-size: 30px; /* Tamaño de fuente inicial */
+    overflow: hidden;
+    white-space: nowrap;
+    /* border-right: .15em solid orange; */
+    animation: escribir 5s linear; /* Reducimos la duración y cambiamos el timing a linear */
+    display: inline-block;
+}
+
+@keyframes escribir {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+ 
+  .boton {
+    font-family: 'Intro Rust', Arial, sans-serif;
+    margin-bottom: 30px;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    position: relative;
+    transition: transform 0.3s; /* Mantenemos la transición para suavizar el efecto */
+  }
+  
+  .boton::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 30%;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s, left 0.3s;
+    transform: translateX(-50%);
+  }
+  
+  .boton:hover::after {
+    width: 50%;
+  }
+  
+  .boton:hover {
+    transform: scale(1.1); 
+  }
+  @font-face {
+    font-family: 'Intro Rust';
+    src: url('font/IntroHeadR-Base.otf') format('opentype');
+  }
+
