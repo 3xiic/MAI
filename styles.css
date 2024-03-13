@@ -47,35 +47,93 @@ a {
      margin-left: 20px;
 }
 .contenedor {
-    background-color:#F3D7CA;
-    overflow: hidden; /* Limpiar el float */
-    height: 30%;
+  display: flex;
+  justify-content: space-between; /* Distribuir los elementos de manera uniforme */
+  background: #F3D7CA; /* Cuadrito de fondo */
 }
 
 .elemento1 {
     font-family: 'Intro Rust', Arial, sans-serif;
     font-size: 30px;
-    width: 50%; /* Distribuir el espacio igualmente entre los elementos */
-    box-sizing: border-box; /* Incluir el relleno y el borde en el ancho especificado */
-    float: left; /* Flotar el primer elemento a la izquierda */
+    width: calc(50% - 150px); /* Resta el espacio que ocupará elemento2 */
+    box-sizing: border-box;
     /* Eliminar el borde */
     border: none;
     /* Alinear el texto al centro */
     text-align: center;
 }
 
-.elemento1, .elemento2 {
-    height: 30%;
-    width: 50%; /* Distribuir el espacio igualmente entre los elementos */
-    box-sizing: border-box; /* Incluir el relleno y el borde en el ancho especificado */
-    float: left; /* Flotar ambos elementos hacia la izquierda */
+.elemento2 {
+  max-width: 800px; /* Ajusta este valor al tamaño de una imagen */
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: left; /* Alinea al centro derecho */
+  align-items: center; /* Centra verticalmente */
 }
 
-.elemento2 {
-    max-width: 20%; /* Establecer el ancho máximo de la imagen al 100% del contenedor */
-    margin-left: 5%;
-    height: auto; /* Permitir que la altura se ajuste automáticamente para mantener la proporción */
+.container-carousel {
+
+  width: 800px;
+  height: 500px;
+  background-color: #e0e0e0;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+  border-radius: 15px;
+  overflow: hidden;
+
 }
+
+.carruseles {
+  width: 1000%;
+  height: 100%;
+  display: flex;
+
+}
+
+.slider-section {
+  width: calc(100% / 10);
+  height: 100%;
+}
+
+.slider-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.btn-left,
+.btn-right {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff81;
+  transform: translate(0,-50%);
+  transition: .5s ease;
+  user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  background-color: #333333d4;
+  color: #fff;
+}
+
+.btn-left {
+  left: 30px;
+}
+
+.btn-right {
+  right: 30px;
+}
+
 
 .botones-container {
     width: 80%; /* Ancho deseado para el contenedor de botones */
@@ -95,6 +153,26 @@ a {
     /* border-right: .15em solid orange; */
     animation: escribir 5s linear; /* Reducimos la duración y cambiamos el timing a linear */
     display: inline-block;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 10px; /* Ajusta el espaciado según sea necesario */
+}
+blockquote {
+  padding-left: 10px; /* Ajusta el espaciado del texto de la cita según sea necesario */
+  margin: 0; /* Asegura que no haya espacio adicional alrededor del bloque de cita */
+}
+blockquote p {
+  margin: 0; /* Asegura que no haya espacio adicional alrededor del texto de la cita */
+}
+cite {
+  font-size: 25px;
+  display: block; /* Coloca la firma del autor en una línea separada */
+  font-style: italic; /* Ajusta el estilo del texto del autor según sea necesario */
+}
+.linea-divisoria {
+  width: 50%; /* Ancho máximo de la línea divisoria */
+  margin: 20px auto; /* Centrar la línea divisoria y agregar un espaciado superior */
+  border-bottom: 1px solid black; /* Establece una línea divisoria */
 }
 
 @keyframes escribir {
