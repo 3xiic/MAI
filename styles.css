@@ -1,76 +1,94 @@
 header {
-    font-family: 'Intro Rust', Arial, sans-serif;
-    background-color: #D0A2F7;
-    color: black;
-    padding: 20px;
-    text-align: center; 
-    height: 8vh;
-    font-size: 30px;
+  font-family: 'Intro Rust', Arial, sans-serif;
+  background-color: #FFEFEF;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  height: 8vh;
+  font-size: 30px;
 }
+
 body {
-    background-color: #E5D4FF; 
-    font-family: 'Intro Rust', Arial, sans-serif;
+  background-color: #F0EBE3;
+  font-family: 'Intro Rust', Arial, sans-serif;
 }
+
 a {
-    text-decoration: none; /* Quitar el subrayado predeterminado */
-    outline: none; /* Quitar el contorno predeterminado */
-    color: rgb(0, 0, 0); /* Cambiar el color del texto de los enlaces a negro */
+  text-decoration: none;
+  /* Quitar el subrayado predeterminado */
+  outline: none;
+  /* Quitar el contorno predeterminado */
+  color: rgb(0, 0, 0);
+  /* Cambiar el color del texto de los enlaces a negro */
 }
-.enlace_especifico{
-    color: #881ae9;
-}
+
 .container {
-    display: flex;
-    align-items: center; /* Alinea verticalmente los elementos al centro */
-    justify-content: center; /* Alinea horizontalmente los elementos al centro */
+  display: flex;
+  align-items: center;
+  /* Alinea verticalmente los elementos al centro */
+  justify-content: center;
+  /* Alinea horizontalmente los elementos al centro */
 }
+
 .imagen-izquierda {
-    width: 80px;
-    height: 80px;
-    margin-right: 10px; /* Margen a la derecha para separar la imagen del texto */
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  /* Margen a la derecha para separar la imagen del texto */
 }
 
 .imagen-derecha {
-    width: 80px;
-    height: 80px;
-    margin-left: 0px; /* Margen a la izquierda para separar la imagen del texto */
+  width: 80px;
+  height: 80px;
+  margin-left: 0px;
+  /* Margen a la izquierda para separar la imagen del texto */
 }
 
 
 /* Estilos adicionales para el contenido */
 
-.cuadro{
-    
-    width: 400px; /* Ancho del div */
-    height: 200px; /* Alto del div */
-    background: black; /* Cuadrito de fondo */
-     margin-left: 20px;
+.cuadro {
+
+  width: 400px;
+  /* Ancho del div */
+  height: 200px;
+  /* Alto del div */
+  background: black;
+  /* Cuadrito de fondo */
+  margin-left: 20px;
 }
+
 .contenedor {
   display: flex;
-  justify-content: space-between; /* Distribuir los elementos de manera uniforme */
-  background: #DCBFFF; /* Cuadrito de fondo */
+  justify-content: space-between;
+  /* Distribuir los elementos de manera uniforme */
+  background: #F3D0D7;
+  /* Cuadrito de fondo */
 }
 
 .elemento1 {
-    font-family: 'Intro Rust', Arial, sans-serif;
-    font-size: 30px;
-    width: calc(50% - 150px); /* Resta el espacio que ocupará elemento2 */
-    box-sizing: border-box;
-    /* Eliminar el borde */
-    border: none;
-    /* Alinear el texto al centro */
-    text-align: center;
+  font-family: 'Intro Rust', Arial, sans-serif;
+  font-size: 30px;
+  width: calc(50% - 150px);
+  /* Resta el espacio que ocupará elemento2 */
+  box-sizing: border-box;
+  /* Eliminar el borde */
+  border: none;
+  /* Alinear el texto al centro */
+  text-align: center;
 }
 
 .elemento2 {
-  max-width: 800px; /* Ajusta este valor al tamaño de una imagen */
+  max-width: 800px;
+  /* Ajusta este valor al tamaño de una imagen */
   height: auto;
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  justify-content: left; /* Alinea al centro derecho */
-  align-items: center; /* Centra verticalmente */
+  justify-content: left;
+  /* Alinea al centro derecho */
+  align-items: center;
+  /* Centra verticalmente */
 }
 
 .container-carousel {
@@ -115,7 +133,7 @@ a {
   font-weight: 600;
   cursor: pointer;
   color: #ffffff81;
-  transform: translate(0,-50%);
+  transform: translate(0, -50%);
   transition: .5s ease;
   user-select: none;
 }
@@ -136,159 +154,277 @@ a {
 
 
 .botones-container {
-    width: 80%; /* Ancho deseado para el contenedor de botones */
-    margin: 0 auto; /* Para centrar el contenedor horizontalmente */
-  }
-  
-  .texto {
-    font-family: 'Intro Rust', Arial, sans-serif;
-    display: none;
-    font-size: 30px; /* Tamaño de fuente inicial */
-  }
-  .texto-escrito {
-    font-family: 'Intro Rust', Arial, sans-serif;
-    font-size: 30px; /* Tamaño de fuente inicial */
-    overflow: hidden;
-    white-space: nowrap;
-    /* border-right: .15em solid orange; */
-    animation: escribir 5s linear; /* Reducimos la duración y cambiamos el timing a linear */
-    display: inline-block;
-    max-width: 100%;
-    margin: auto;
-    padding: 0 10px; /* Ajusta el espaciado según sea necesario */
+  width: 80%;
+  /* Ancho deseado para el contenedor de botones */
+  margin: 0 auto;
+  /* Para centrar el contenedor horizontalmente */
 }
+
+.texto {
+  font-family: 'Intro Rust', Arial, sans-serif;
+  display: none;
+  font-size: 30px;
+  /* Tamaño de fuente inicial */
+}
+
+
+.enlace_especifico {
+  color: #fd819a;
+}
+
+.enlace_especifico,
+.imagenSong {
+  display: block;
+  /* Asegura que los enlaces y las imágenes se comporten como bloques, ocupando su propia línea */
+}
+
+.texto-cancion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Centra los elementos horizontalmente en el contenedor */
+  gap: 20px;
+  /* Espacio entre los elementos */
+  padding: 20px;
+  /* Padding alrededor del contenedor para evitar que los elementos toquen los bordes */
+}
+
+.texto-cancion a {
+  flex: 0 0 200px;
+  /* No crecen, no se encogen, ancho fijo de 200px */
+  display: flex;
+  flex-direction: column;
+  /* Organiza el contenido en columnas */
+  align-items: center;
+  /* Alinea los contenidos al centro horizontalmente */
+  text-align: center;
+  /* Centra el texto horizontalmente */
+  margin-bottom: 20px;
+  /* Espacio debajo de cada enlace */
+  min-height: 320px;
+  /* Altura mínima para cada enlace */
+}
+
+.texto-cancion img {
+  width: 100%;
+  /* Ajusta la imagen al 100% del ancho del enlace */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  margin-bottom: 10px;
+  /* Espacio entre la imagen y el texto debajo */
+}
+
+.imagenSong {
+  width: 100%;
+  /* La imagen ocupa todo el ancho de su contenedor (enlace) */
+  height: auto;
+  /* Altura automática para mantener la proporción */
+  display: block;
+  /* Evita márgenes extra alrededor de la imagen */
+  margin-bottom: 10px;
+  /* Espacio debajo de la imagen */
+  order: -1;
+  /* Asegura que la imagen siempre esté en la parte superior */
+}
+
+.texto-cancion a p {
+  order: 1;
+  /* Asegura que el texto siempre esté debajo de la imagen */
+  width: 100%;
+  /* Ocupa todo el ancho del enlace */
+  margin-top: auto;
+  /* Empuja el texto hacia abajo si hay espacio adicional */
+}
+
+.imagenSong-Spotify {
+  width: 400px;
+  height: 150px;
+  display: block;
+  /* Asegura que la imagen no tenga espacio extra alrededor */
+}
+
+.imagenSong-Queen {
+  width: 300px;
+  height: 300px;
+  display: block;
+  /* Asegura que la imagen no tenga espacio extra alrededor */
+}
+
+.texto-escrito {
+  font-family: 'Intro Rust', Arial, sans-serif;
+  font-size: 30px;
+  /* Tamaño de fuente inicial */
+  overflow: hidden;
+  white-space: nowrap;
+  /* border-right: .15em solid orange; */
+  animation: escribir 5s linear;
+  /* Reducimos la duración y cambiamos el timing a linear */
+  display: inline-block;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 10px;
+  /* Ajusta el espaciado según sea necesario */
+}
+
 blockquote {
-  padding-left: 10px; /* Ajusta el espaciado del texto de la cita según sea necesario */
-  margin: 0; /* Asegura que no haya espacio adicional alrededor del bloque de cita */
+  padding-left: 10px;
+  /* Ajusta el espaciado del texto de la cita según sea necesario */
+  margin: 0;
+  /* Asegura que no haya espacio adicional alrededor del bloque de cita */
 }
+
 blockquote p {
-  margin: 0; /* Asegura que no haya espacio adicional alrededor del texto de la cita */
+  margin: 0;
+  /* Asegura que no haya espacio adicional alrededor del texto de la cita */
 }
+
 cite {
   font-size: 25px;
-  display: block; /* Coloca la firma del autor en una línea separada */
-  font-style: italic; /* Ajusta el estilo del texto del autor según sea necesario */
+  display: block;
+  /* Coloca la firma del autor en una línea separada */
+  font-style: italic;
+  /* Ajusta el estilo del texto del autor según sea necesario */
 }
+
 .linea-divisoria {
-  width: 50%; /* Ancho máximo de la línea divisoria */
-  margin: 20px auto; /* Centrar la línea divisoria y agregar un espaciado superior */
-  border-bottom: 1px solid black; /* Establece una línea divisoria */
+  width: 50%;
+  /* Ancho máximo de la línea divisoria */
+  margin: 20px auto;
+  /* Centrar la línea divisoria y agregar un espaciado superior */
+  border-bottom: 1px solid black;
+  /* Establece una línea divisoria */
 }
 
 @keyframes escribir {
-    0% { width: 0; }
-    100% { width: 100%; }
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
- 
-  .boton {
-    font-family: 'Intro Rust', Arial, sans-serif;
-    margin-bottom: 30px;
-    width: 100%;
-    display: block;
-    padding: 10px;
-    border: none;
-    background-color: transparent;
-    font-size: 30px;
-    position: relative;
-    transition: transform 0.3s; /* Mantenemos la transición para suavizar el efecto */
-  }
-  
-  .boton::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 30%;
-    height: 2px;
-    background-color: black;
-    transition: width 0.3s, left 0.3s;
-    transform: translateX(-50%);
-  }
-  
-  .boton:hover::after {
-    width: 50%;
-  }
-  
-  .boton:hover {
-    transform: scale(1.1); 
-  }
-  @font-face {
-    font-family: 'Intro Rust';
-    src: url('font/IntroHeadR-Base.otf') format('opentype');
-  }
- 
+
+.boton {
+  font-family: 'Intro Rust', Arial, sans-serif;
+  margin-bottom: 30px;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  position: relative;
+  transition: transform 0.3s;
+  /* Mantenemos la transición para suavizar el efecto */
+}
+
+.boton::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 30%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s, left 0.3s;
+  transform: translateX(-50%);
+}
+
+.boton:hover::after {
+  width: 50%;
+}
+
+.boton:hover {
+  transform: scale(1.1);
+}
+
+@font-face {
+  font-family: 'Intro Rust';
+  src: url('font/IntroHeadR-Base.otf') format('opentype');
+}
+
 .wrapper {
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
-    width: 200px;
-    height: 300px; /* Ajusta esta altura según tus necesidades */
-    max-height: 400px; /* Ajusta esta altura según tus necesidades */
-    border-radius: .75rem;
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 2rem;
-    margin: 0 10px;
-    display: flex;
-    align-items: flex-end;
-    transition: .6s cubic-bezier(.28,-0.03,0,.99);
-    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.card > .row {
-    color: white;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.card > .row > .icon {
-    background: #4d3e61;
-    color: white;
-    font-size: 23px;
-    border-radius: 50%;
-    width: 90px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-}
-.row {  
+  width: 200px;
+  height: 300px;
+  /* Ajusta esta altura según tus necesidades */
+  max-height: 400px;
+  /* Ajusta esta altura según tus necesidades */
+  border-radius: .75rem;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
   display: flex;
-  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card>.row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card>.row>.icon {
+  background: #ff98ac;
+  color: white;
+  font-size: 23px;
+  border-radius: 50%;
+  width: 90px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  /* Alinea los elementos verticalmente en el centro */
 }
 
 .icon {
-  margin-bottom: 10px; /* Ajusta la separación inferior del icono */
+  margin-bottom: 10px;
+  /* Ajusta la separación inferior del icono */
 }
 
 
-.card > .row > .description {
+.card>.row>.description {
   display: flex;
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
   width: 400px;
-  height: 100%; /* Ajusta esta altura según tus necesidades */
+  height: 100%;
+  /* Ajusta esta altura según tus necesidades */
   opacity: 0;
   transform: translateY(30px);
   transition-delay: .3s;
   transition: all .3s ease;
-  max-width: 100%; /* Establece el ancho máximo */
+  max-width: 100%;
+  /* Establece el ancho máximo */
 }
 
 
 
 .description h4 {
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0); /* Ajusta el desplazamiento y el radio */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+  /* Ajusta el desplazamiento y el radio */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo semitransparente */
   padding: 5px 100px;
   border-radius: 10px;
 }
@@ -301,26 +437,31 @@ cite {
 
 
 input {
-    display: none;
+  display: none;
 }
 
-input:checked + label {
-    width: 600px;
-    height: 450px; /* Ajusta esta altura según tus necesidades */
+input:checked+label {
+  width: 600px;
+  height: 450px;
+  /* Ajusta esta altura según tus necesidades */
 }
 
 /* ... el resto de tu código CSS ... */
 
 /* Oculta el icono cuando el input está marcado */
-input:checked + label .icon {
-  opacity: 0; /* Hace que el icono sea transparente */
-  visibility: hidden; /* Oculta el icono */
-  transform: translateY(-30px); /* Mueve el icono hacia arriba */
-  transition: all .3s ease; /* Agrega transición para la animación */
+input:checked+label .icon {
+  opacity: 0;
+  /* Hace que el icono sea transparente */
+  visibility: hidden;
+  /* Oculta el icono */
+  transform: translateY(-30px);
+  /* Mueve el icono hacia arriba */
+  transition: all .3s ease;
+  /* Agrega transición para la animación */
 }
 
 /* Muestra la descripción cuando el input está marcado */
-input:checked + label .description {
+input:checked+label .description {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
@@ -330,34 +471,234 @@ input:checked + label .description {
 
 
 .card[for="c1"] {
-    background-image: url('images/Septiembre.jpg');
+  background-image: url('images/Septiembre.jpg');
 }
+
 .card[for="c2"] {
-    background-image: url('images/Octubre.jpg');
+  background-image: url('images/Octubre.jpg');
 }
+
 .card[for="c3"] {
-    background-image: url('images/Noviembre.jpg');
+  background-image: url('images/Noviembre.jpg');
 }
+
 .card[for="c4"] {
-    background-image: url('images/Diciembre.jpg');
+  background-image: url('images/Diciembre.jpg');
 }
+
 .card[for="c5"] {
   background-image: url('images/Enero.jpg');
 }
+
 .card[for="c6"] {
   background-image: url('images/Febrero.jpg');
 }
+
 .card[for="c7"] {
   background-image: url('images/Marzo.jpg');
 }
+
 .card[for="c8"] {
   background-image: url('images/Abril.jpg');
 }
 
-.imagenSong{
-  width: 200px;
-  height: 200px;
+.card[for="c9"] {
+  background-image: url('images/Mayo.jpg');
+}
+
+.game-container {
+  width: 100%;
+  height: 580px;
+  margin: 0 auto;
+
+  position: relative;
+  background: linear-gradient(transparent, transparent), #41cddf url(images/Parque.png)repeat-x 0px 0px;
+  /*linear-gradient(#90ebff, white);*/
+  transition: background-color 1s linear;
+  overflow: hidden;
+}
+
+w .mediodia {
+  background-color: #57ddc7;
+}
+
+.tarde {
+  background-color: #fc574c;
+}
+
+.noche {
+  background-color: #2506f1;
 }
 
 
+.dino {
+  width: 100px;
+  height: 100px;
 
+  position: absolute;
+  bottom: 22px;
+  left: 42px;
+  z-index: 2;
+
+  background: url(images/cho.png) repeat-x 0px 0px;
+  background-size: 100px 100px;
+  background-position-x: 0px;
+
+}
+
+.dino-corriendo {
+  animation: animarDino 0.25s steps(2) infinite;
+}
+
+.dino-estrellado {
+  background: url(images/choPerdio.png) repeat-x 0px 0px;
+  background-position-x: 0;
+}
+
+.suelo {
+  width: 200%;
+  height: 42px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background: url(images/suelo.png) repeat-x 0px 0px;
+  background-size: 50% 42px;
+  transition: background 1s linear;
+
+}
+
+.suelo-tarde {
+  width: 200%;
+  height: 42px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background: url(images/sueloTarde.png) repeat-x 0px 0px;
+  background-size: 50% 42px;
+
+}
+
+.suelo-noche {
+  width: 200%;
+  height: 42px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background: url(images/sueloNoche.png) repeat-x 0px 0px;
+  background-size: 50% 42px;
+
+}
+
+.perro {
+  width: 140px;
+  height: 90px;
+
+  position: absolute;
+  bottom: 16px;
+  left: 600px;
+  z-index: 1;
+
+  background: url(images/perro.png) no-repeat;
+}
+
+.perro2 {
+  width: 160px;
+  height: 90px;
+
+  background: url(images/perro2.png) no-repeat;
+}
+
+.nube {
+  width: 92px;
+  height: 26px;
+
+  position: absolute;
+  z-index: 0;
+
+  background: url(images/nube.png) no-repeat;
+  background-size: 92px 26px;
+}
+
+.score {
+  width: 100px;
+  height: 30px;
+
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  z-index: 10;
+
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.game-over {
+  display: none;
+
+  position: absolute;
+  width: 100%;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 30px;
+  font-family: Verdana;
+  font-weight: 700;
+}
+
+
+@keyframes animarDino {
+  from {
+    background-position-x: 0px;
+  }
+
+  to {
+    background-position-x: 15px;
+  }
+}
+
+.boton-reset {
+  font-family: 'Intro Rust', Arial, sans-serif;
+  margin-bottom: 30px;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  position: relative;
+  transition: transform 0.3s;
+  /* Mantenemos la transición para suavizar el efecto */
+  color: #ffffff;
+}
+
+.boton-reset::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 30%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.3s, left 0.3s;
+  transform: translateX(-50%);
+}
+
+.boton-reset:hover::after {
+  width: 50%;
+}
+
+.boton-reset:hover {
+  transform: scale(1.1);
+}
